@@ -50,7 +50,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     //自动打开浏览器
     new OpnWebpackPlugin({
-      target: "http://localhost:8090"
+      target: "http://localhost:8091"
     }),
     // 编译html文件
     new HtmlWebpackPlugin({
@@ -74,5 +74,10 @@ module.exports = {
       threads: 4,
       verbose: true
     }),
+    //编译进度条
+    new ProgressBarWebpackPlugin({
+      format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
+      clear: false
+    })
   ]
 }

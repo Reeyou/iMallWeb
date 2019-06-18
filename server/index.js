@@ -7,7 +7,7 @@ const webpackConfig = require('../webpack.config.js')
 const compiler = webpack(webpackConfig)
 const compression = require('compression')
 
-const port = 8090
+const port = 8091
 
 // webpack编译
 app.use(webpackDevMiddware(compiler, {

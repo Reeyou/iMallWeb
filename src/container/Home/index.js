@@ -11,7 +11,7 @@ class Home extends Components {
   render() {
     <div>
       <h1>首页</h1>
-    <div>
+    </div>
   }
 }
 export default Home;
