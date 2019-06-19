@@ -2,16 +2,22 @@
   @Author: Reeyou  
   @Params: 首页
 **/
-import React, { Components } from 'react'
+import React, { Component } from 'react'
+import Layout from '@/components/Layout'
 
-class Home extends Components {
+const { Header, Footer, NavBar, Banner } = Layout
+class Home extends Component {
   constructor(props) {
     super(props)
   }
   render() {
-    <div>
-      <h1>首页</h1>
-    </div>
+    return (
+      <div>
+        <Header />
+        <NavBar />
+        <Banner />
+      </div>
+    )
   }
 }
 export default Home;
