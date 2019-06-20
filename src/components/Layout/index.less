@@ -105,6 +105,7 @@
   background-image: url(../../assets/img/banner.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  position: relative;
   // ==============
   .sideNav {
     width: 1200px;
@@ -162,7 +163,7 @@
             h2, .list .item {
               transition: color 100ms ease-in;
               &:hover {
-                color: red;
+                color: #de5b60;
               }
             }
           }
@@ -171,7 +172,238 @@
     }
   }
   .bannerFooter {
-    
+    width: 100%;
+    height: 80px;
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+    .container {
+      width: 1200px;
+      height: 80px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 1px 1px 2px #ccc;
+      .left {
+        float: left;
+        width: 25%;
+        height: 100%;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 50px;
+          top: 15px;
+          background: #e9e8e8;
+          right: 0;
+        }
+        &_con {
+          width: 70%;
+          margin: 0 auto;
+          .avatar {
+            padding: 10px 0;
+            display: inline-block;
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              background: #fff;
+            }
+          }
+          .info {
+            vertical-align: top;
+            float: right;
+            height: 50px;
+            padding: 15px 0;
+            p {
+              margin-top: 2px;
+              font-size: 14px;
+              span {
+
+              }
+            }
+            .user {
+              color: #848484;
+              a {
+                color:#000;
+                transition: color 150ms ease;
+                &:hover {
+                  color: #de5b60;
+                  cursor: pointer;
+                }
+              }
+            }
+            .btn {
+              margin-top: 14px;
+              .new, .member {
+                font-size: 14px;
+                padding: 2px 8px;
+                border-radius: 4px;
+                transition: all 100ms ease-in;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+              .new {
+                border: 1px solid #de5b60;
+                color: #de5b60;
+                &:hover {
+                  background: #e6676b;
+                  color: #fff;
+                }
+              }
+              .member {
+                margin-left: 10px;
+                color: #fde4b3;
+                background: #595454;
+                &:hover {
+                  background: #424040;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        float: right;
+        width: 25%;
+        height: 100%;
+        border-left: 1px solid #e9e8e8;
+        &_top {
+          width: 100%;
+          height: calc(50% - 1px);
+          line-height: 39px;
+          border-bottom: 1px solid #e9e8e8;
+          
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          span {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 2px 0 28px;
+            color: #777;
+          }
+          a {
+            font-size: 12px;
+            color: #6f6f6f;
+            letter-spacing: 0.5px;
+          }
+        }
+        &_bottom {
+          ul {
+            li {
+              display: inline-block;
+              margin-left: 28px;
+              height: 42px;
+              line-height: 42px;
+              &:hover {
+                cursor: pointer;
+                .p_desc {
+                  color: #de5b60;
+                }
+              }
+              a {
+                font-size: 12px;
+                color: #777;
+                display: block;
+                line-height: 42px;
+                transition: color 150ms ease;
+                &:hover {
+                  color: #de5b60;
+                  cursor: pointer;
+                }
+                .p_img {
+                  display:inline-block;
+                  position: relative;
+                  width: 20px;
+                  height: 20px;
+                  overflow: hidden;
+                  top: 5px;
+                  margin-right: 2px;
+                  .item_icon{
+                    position: absolute;
+                    width: auto;
+                    height: auto;
+                    transform: scale(0.5,0.5);
+                    top: -20px;
+                  }
+                  .icon0 {
+                    left: -450px;
+                  } 
+                  .icon1 {
+                    left: -470px;
+                  } 
+                  .icon2 {
+                    left: -490px;
+                  } 
+                }
+              }
+            }
+          }
+        }
+      }
+      .middle {
+        text-align: center;
+        padding: 11px 0;
+        ul {
+           li {
+              display: inline-block;
+              margin-left: 28px;
+              &:first-child {
+                margin-left: 0;
+              }
+              &:hover {
+                cursor: pointer;
+                .p_desc {
+                  color: #de5b60;
+                }
+              }
+              .p_img {
+                position: relative;
+                width: 40px;
+                margin: 0 auto;
+                height: 40px;
+                overflow: hidden;
+                .item_icon{
+                  position: absolute;
+                  width: auto;
+                  height: auto;
+                  transform: scale(0.5,0.5);
+                  top: -20px;
+                }
+                .icon0 {
+                  left: -170px;
+                } 
+                .icon1 {
+                  left: -210px;
+                } 
+                .icon2 {
+                  left: -250px;
+                } 
+                .icon3 {
+                  left: -290px;
+                } 
+                .icon4 {
+                  left: -330px;
+                } 
+                .icon5 {
+                  left: -370px;
+                } 
+                .icon6 {
+                  left: -410px;
+                } 
+              }
+              .p_desc {
+                font-size: 12px;
+                margin-top: 5px;
+                color: #777;
+              }
+           }
+        }
+      }
+    }
   }
 }
 
