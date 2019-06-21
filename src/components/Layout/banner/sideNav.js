@@ -115,7 +115,7 @@ class sideNav extends Component {
           <ul>
             {
               plantList2.map((item, index) => (
-                <li key={index} onMouseEnter={this.onMouseEnter}>
+                <li className='clearFix' key={index} onMouseEnter={this.onMouseEnter}>
                   <div className='info'>
                     <img src={item.url} alt=""/>
                     <span>{item.label}</span>

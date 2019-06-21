@@ -25,7 +25,7 @@ import recom5 from '../../assets/img/recom5.png'
 import turn1 from '../../assets/img/turn1.jpg'
 import './index.less'
 
-const { Header, Footer, NavBar, Banner } = Layout
+const { Banner } = Layout
 const promoImg = [promo1, promo2, promo3, promo4]
 const hotImg = [hot1, hot2, hot3, hot4, hot5, hot6, hot7, hot8]
 const recomImg = [recom1, recom2, recom3, recom4, recom5]
@@ -37,8 +37,6 @@ class Home extends Component {
   render() {
     return (
       <div className='home'>
-        <Header />
-        <NavBar />
         <Banner />
         <div className="channel">
           {/* 宣传 */}
@@ -268,9 +266,6 @@ class Home extends Component {
           <section className='product footerImg'>
               <img src={turn1} alt=""/>
           </section>
-
-          {/* 底部 */}
-          <Footer />
         </div>
       </div>
     )

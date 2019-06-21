@@ -2,16 +2,19 @@
   @Author: Reeyou  
   @Params: 商品详情
 **/
-import React, { Components } from 'react'
+import React, { Component } from 'react'
+import './index.less'
 
-class Home extends Components {
+class ProductDetail extends Component {
   constructor(props) {
     super(props)
   }
   render() {
-    <div>
-      <h1>首页</h1>
-    </div>
+    return (
+      <div>
+        <h1>首页</h1>
+      </div>
+    )
   }
 }
-export default Home;
+export default ProductDetail;
