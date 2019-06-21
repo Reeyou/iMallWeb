@@ -4,7 +4,7 @@ import Loadable from 'react-loadable'
 const Home = Loadable({loader: () => import('../container/Home'), loading: PageLoading, delay: 400})
 
 //商品信息
-const ProductDetail = Loadable({loader: () => import('../container/Product/detail'), loading: PageLoading, delay: 400})
+const ProductDetail = Loadable({loader: () => import('../container/Product'), loading: PageLoading, delay: 400})
 
 
 const routers = [

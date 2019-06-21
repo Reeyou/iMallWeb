@@ -41,12 +41,12 @@ class Footer extends Component {
             <div className="con">
             {
               data.map((item, index) => (
-                <div className="label">
+                <div className="label" key={index}>
                   <h3>{item.label}</h3>
                   <ul>
                     {
                       item.data.map((item, index) => (
-                        <li>
+                        <li key={index}>
                           <a href="">{item}</a>
                         </li>
                       ))

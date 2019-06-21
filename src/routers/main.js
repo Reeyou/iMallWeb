@@ -34,7 +34,6 @@ export default class mainView extends Component {
     return (
       <div>
         <Header />
-        <NavBar />
         <Switch>
           {
             routers.map(route => {

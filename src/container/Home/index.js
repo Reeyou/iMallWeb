@@ -25,7 +25,7 @@ import recom5 from '../../assets/img/recom5.png'
 import turn1 from '../../assets/img/turn1.jpg'
 import './index.less'
 
-const { Banner } = Layout
+const { HomeNavBar, Banner } = Layout
 const promoImg = [promo1, promo2, promo3, promo4]
 const hotImg = [hot1, hot2, hot3, hot4, hot5, hot6, hot7, hot8]
 const recomImg = [recom1, recom2, recom3, recom4, recom5]
@@ -37,6 +37,7 @@ class Home extends Component {
   render() {
     return (
       <div className='home'>
+        <HomeNavBar / >
         <Banner />
         <div className="channel">
           {/* 宣传 */}
