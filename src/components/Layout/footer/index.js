@@ -68,11 +68,14 @@ class Footer extends Component {
               关注imall:
             </p>
           </div>
+          
         </div>
-        <div className="foot">
-            <p>Copyright ©2017, exrick.cn Co., Ltd. All Rights Reserved.本网站设计内容大部分属锤子科技
-法律声明隐私条款开发者中心</p>
-        </div>
+        <div className="product foot">
+            <div className="info">
+              <p className='server'>Copyright ©2019, Reeyou.cn Co., Ltd. All Rights Reserved.本网站设计内容来源自华为商城<span>法律声明</span><span>隐私条款</span><span>开发者中心</span></p>
+              <p className='number'>蜀ICP备16030308号-1 蜀ICP证16030308号</p>
+            </div>
+          </div>
       </div>
     )
   }

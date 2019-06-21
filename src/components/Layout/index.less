@@ -17,6 +17,11 @@
         }
         a {
           color: #a4a4a4;
+          transition: all ease-in 200ms;
+          &:hover {
+            color: #de5b60;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -57,6 +62,11 @@
         margin-left: 10px;
         a {
           color: #000;
+          transition: all ease-in 200ms;
+          &:hover {
+            color: #de5b60;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -170,6 +180,38 @@
         }
       }
     }
+    .plant {
+      // width: 220px;
+      height: 440px;
+      background: rgba(255,255,255,0.95);
+      border-radius:0 6px 6px 0;
+      position: absolute;
+      top: 18px;
+      left: 220px;
+      ul {
+        float: left;
+        height: 440px;
+        li {
+          .info {
+            width: 200px;
+            height: 80px;
+            padding: 14px 0;
+            line-height: 80px;
+            img {
+              width: 56px;
+              height: 56px;
+              float: left;
+              margin-top: 14px;
+            }
+            span {
+              color: #777;
+              font-size: 13px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
   }
   .bannerFooter {
     width: 100%;
@@ -183,7 +225,7 @@
       margin: 0 auto;
       background: #fff;
       border-radius: 6px;
-      box-shadow: 1px 1px 2px #ccc;
+      box-shadow: 0px 2px 10px #ccc;
       .left {
         float: left;
         width: 25%;
@@ -410,35 +452,114 @@
 //
 .footer {
   width: 100%;
-  height: 340px;
   background: #f9f9f9;
-  // position: fixed;
   bottom: 0;
+  box-shadow: 0 -1px 30px #ccc;
   .container {
     width: 1200px;
-    height: 220px;
+    padding: 30px 0;
     margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
     .left {
-      width: 800px;
+      width: 900px;
       height: 100%;
+      float: left;
       .con {
-        padding -top: 40px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 140px;
+          background: #dedede;
+          right:40px;
+          top: 0;
+        }
         .label {
           display: inline-block;
-          margin-right: 20px;
+          width: 150px;
           h3 {
-  
+            color: #575757;
+            font-size: 14px;
           }
           ul {
+            margin-top: 10px;
             li {
-              
+              padding: 5px 0;
+              a {
+                color: #777;
+                font-size: 12px;
+                &:hover {
+                  color: #5895f0;
+                  color: #de5b60;
+                  cursor: pointer;
+                }
+              }
             }
           }
         }
       }
     }
     .right {
-
+      display: inline-block;
+      text-align: center;
+      .phoneNumber {
+        font-size: 24px;
+        font-weight: bold;
+        color: #575757;
+      }
+      .msg {
+        color: #575757;
+        margin: 16px 0;
+      }
+      .btn {
+        padding: 10px;
+        border-radius: 20px;
+        color: #fff;
+        background: #333;
+        transition: all ease-in 200ms;
+        &:hover {
+          background: #575757;
+          cursor: pointer;
+        }
+      }
+      .follow {
+        margin-top: 14px;
+        color: #575757;
+      }
+    }
+  }
+  .foot {
+    .info {
+      padding-left: 100px;
+      .server {
+        color: #777;
+        font-size: 14px;
+        margin: 16px 0;
+        span {
+          color: #777;
+          position: relative;
+          margin-left: 12px;
+          &:after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 12px;
+            background: #a4a4a4;
+            left: -6px;
+            top: 4px;
+          }
+          &:hover {
+            color: #de5b60;
+            cursor: pointer;
+          }
+        }
+      }
+      .number {
+        color: #a4a4a4;
+        font-size: 12px;
+        padding-bottom: 40px;
+      }
     }
   }
 }

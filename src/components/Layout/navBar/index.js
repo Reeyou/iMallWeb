@@ -13,10 +13,12 @@ class NavBar extends Component {
   render() {
     const leftText = [
                       {
-                        label:'华为专区'
+                        label:'华为专区',
+                        borderColor: 1
                       },
                       {
-                        label:'荣耀专区'
+                        label:'荣耀专区',
+                        borderColor: 2
                       },
                       {
                         label:'华为P30'

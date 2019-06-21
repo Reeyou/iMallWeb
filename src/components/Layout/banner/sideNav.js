@@ -1,9 +1,17 @@
 
 import React, { Component } from 'react'
+import hot1 from '../../../assets/img/hot1.png'
+import hot2 from '../../../assets/img/hot2.png'
+import hot3 from '../../../assets/img/hot3.png'
+import hot4 from '../../../assets/img/hot4.png'
+import hot5 from '../../../assets/img/hot5.png'
 
 class sideNav extends Component {
   constructor(props) {
     super(props)
+  }
+  onMouseEnter() {
+
   }
   render() {
     const category = [
@@ -32,13 +40,50 @@ class sideNav extends Component {
         list: ['服务器','AI 计算平台']
       }
     ];
+
+    const plantList1 = [
+      {
+        label: '荣耀20 Pro',
+        url: hot1
+      },
+      {
+        label: '华为nova5 Pro',
+        url: hot3
+      },
+      {
+        label: '华为P30 Pro',
+        url: hot4
+      },
+      {
+        label: '荣耀play',
+        url: hot5
+      },
+    ]
+    const plantList2 = [
+      {
+        label: '荣耀20 Pro',
+        url: hot1
+      },
+      {
+        label: '华为 P30',
+        url: hot2
+      },
+      {
+        label: '华为nova5 Pro',
+        url: hot3
+      },
+      {
+        label: '华为P30 Pro',
+        url: hot4
+      },
+    ]
     return (
       <div className='sideNav'>
         <div className="container">
           <ul>
             {
               category.map((item, index) => (
-                <li key={index}>
+                <li key={index} onMouseEnter={this.onMouseEnter}>
                   <div className='info'>
                     <h2>{item.label}</h2>
                     <div className='list'>
@@ -48,6 +93,32 @@ class sideNav extends Component {
                         ))
                       }
                     </div>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div className="plant">
+          <ul>
+            {
+              plantList1.map((item, index) => (
+                <li key={index} onMouseEnter={this.onMouseEnter}>
+                  <div className='info'>
+                    <img src={item.url} alt=""/>
+                    <span>{item.label}</span>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+          <ul>
+            {
+              plantList2.map((item, index) => (
+                <li key={index} onMouseEnter={this.onMouseEnter}>
+                  <div className='info'>
+                    <img src={item.url} alt=""/>
+                    <span>{item.label}</span>
                   </div>
                 </li>
               ))

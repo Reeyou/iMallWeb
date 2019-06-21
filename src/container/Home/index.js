@@ -112,6 +112,9 @@ class Home extends Component {
           <section className='product phone'>
             <div className="title">
               <h2>手机</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
@@ -135,6 +138,9 @@ class Home extends Component {
           <section className='product computer'>
             <div className="title">
               <h2>笔记本电脑</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
@@ -158,6 +164,9 @@ class Home extends Component {
           <section className='product miniPad'>
             <div className="title">
               <h2>精品平板</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
@@ -181,6 +190,9 @@ class Home extends Component {
           <section className='product watch'>
             <div className="title">
               <h2>智能穿戴</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
@@ -204,6 +216,9 @@ class Home extends Component {
           <section className='product floor'>
             <div className="title">
               <h2>智能家居</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
@@ -227,6 +242,9 @@ class Home extends Component {
           <section className='product part'>
             <div className="title">
               <h2>热销配件</h2>
+              <div className="more">
+                <a>查看更多<i className='iconfont icon-more'></i></a>
+              </div>
             </div>
             <div className="con">
               {
